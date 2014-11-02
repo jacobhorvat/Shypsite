@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shyp Site</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+ 	</div>
+
+<div class="container">
+  <h3 class="text-muted">Shyp Site</h3>
+  <ul class="nav nav-justified">
+        <li class=><a href="index.html"><span class = "glyphicon glyphicon-home"> Home</a></span></li>
+        <li class=> <a href="articles.html"><span class="glyphicon glyphicon-search"> Search Items</a></span></li>
+        <li class=><a href="questions.html"><span class = "glyphicon glyphicon-question-sign"> Questions</a></span></li>
+        <li class=><a href="ideas.html"><span class = "glyphicon glyphicon-pencil"> Ideas</a></span></li>
+  </ul>
+</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <div class="companyGallery"
+    <ul>
+       <li><img src="http://www.aminemea.com/wp-content/uploads/2012/06/bmw-140x140.jpg"/></li>
+       <li><img src="http://www.channelweb.co.uk/IMG/095/255095/apple-logo--140x140.jpg?1365426662"/></li>
+       <li><img src="http://www.whartonindia.com/assets/images/startups/bandar-foods.png"/></li>
+       <li><img src="http://cdn.shopify.com/s/files/1/0084/2672/products/maxton_men_gift_card_b46a6743-aafe-4274-8cdd-accb976b83b2_large.png?v=1382665257"/></li>
+   </ul>
+ </div>  
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">         
+          <div class="modal-body">                
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+           $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(img);
+                });
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+           });  
+        })
+</script>
+
+
+
+
+
+</body>
+</html>
