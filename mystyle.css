@@ -1,58 +1,43 @@
-/*html { 
-  background: url(http://www.stunningmesh.com/wp-content/uploads/2011/10/romantic-moonlight-wallpaper-large-13.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-full-size background image
-
-  */
-}
-nav{
+/*=================== Navbar ============================*/
+#shypHeader{
   text-align: center;
-}
-h1{
-	text-align:center;
-}
-h3{
-	font-size: 20px;
-	text-align: center;
-}
-p{
-  text-align: center;
+  color:white;
   font-size: 30px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
-.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
+/* unvisited link */
 
-.navbar transparent navbar-default{
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+/*----- Home link ------*/
+a:link[href="index.html"]{color:white;}
+a:visited[href="index.html"]{color:white;}
+a:hover[href="index.html"]{color:black;}
+a:active[href="index.html"]{color:yellow;}
+/*----- End Home link ------*/
+/*----- Search link ------*/
+a:link[href="itemSelection.html"]{color:white;}
+a:visited[href="itemSelection.html"]{color:white;}
+a:hover[href="itemSelection.html"]{color:black;}
+a:active[href="itemSelection.html"]{color:yellow;}
+/*----- End Search link ------*/
+/*----- Questions link ------*/
+a:link[href="questions.html"]{color:white;}
+a:visited[href="questions.html"]{color:white;}
+a:hover[href="questions.html"]{color:black;}
+a:active[href="questions.html"]{color:yellow;}
+/*----- End Questions link ------*/
+/*----- Idea link ------*/
+a:link[href="ideas.html"]{color:white;}
+a:visited[href="ideas.html"]{color:white;}
+a:hover[href="ideas.html"]{color:black;}
+a:active[href="ideas.html"]{color:yellow;}
+/*----- End Idea link ------*/
+
+#shypBackground{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
-companyGallery ul{
-	padding: 0,0,0,0;
-	margin:0 0 0 0;
-}
-companyGallery ul li{
-	list-style:none;
-    margin-bottom:25px;
-}
-companyGallery ul li img{
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
