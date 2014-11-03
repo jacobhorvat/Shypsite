@@ -19,24 +19,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body background="https://docs.google.com/drawings/d/1b5dajPol2BuV90HhHki_mK6YyCO2T2CX2OcXGur6Fjw/pub?w=1477&h=1099" id="shypBackground">
 
-<div class "container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      
-
-
-
-
-
-
-    </div>
-  </div>
-</div>
-
-
-<nav class="navbar transparent navbar-default" role="navigation">
+<!-- Begin Navbar -->
+<nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -49,25 +35,45 @@
   </div> 
 
 <div class="container">
-  <h3 class="text-muted">Shyp Site</h3>
+  <h3 id="shypHeader">Shyp Site</h3>
   <ul class="nav nav-justified">
-        <li class=> <a href="index.html" role="home"> <span class = "glyphicon glyphicon-home"> Home</a></span></li>
-        <li class=> <a href="articles.html"><span class = "glyphicon glyphicon-search"> Search Items</a></span></li>
+        <li class=><a href="index.html"><span class = "glyphicon glyphicon-home"> Home</a></span></li>
+        <li class=><a href="itemSelection.html"><span class="glyphicon glyphicon-search"> Search Items</a></span></li>
         <li class=><a href="questions.html"><span class = "glyphicon glyphicon-question-sign"> Questions</a></span></li>
         <li class=><a href="ideas.html"><span class = "glyphicon glyphicon-pencil"> Ideas</a></span></li>
   </ul>
 </div>
-<!-- Collect the nav links, forms, and other content for toggling -->
 </nav>
+<!-- End Navbar -->
 
+
+<!-- Landing page search -->
 <div class = "container">
-  <div class="jumbotron">
+  <div class="well">
     <h1>Hello, welcome to the Shyp How-To Site</h1>
       <p>This site is designed to teach you how to ship those complicated items!</p>
-      <p><a class="btn btn-primary btn-lg" href="search.html" role="button">Search Item</a></p>
+      <p><a class="btn btn-primary btn-lg" href="itemSelection.html" role="button">Search Item</a></p>
   </div>
 </div>
+<!-- End Landing Page Search -->
 
 
+<!-- Begin Captain Up -->
+<div id='cptup-ready'></div> 
+<script data-cfasync='false' type='text/javascript'>
+    window.captain = {up: function(fn) { captain.topics.push(fn) }, topics: []};
+    // Add your settings here:
+    captain.up({
+        api_key: '5455ff3473873a5f820000b6'
+    });
+</script>
+<script data-cfasync='false' type='text/javascript'>
+    (function() {
+        var cpt = document.createElement('script'); cpt.type = 'text/javascript'; cpt.async = true;
+        cpt.src = 'http' + (location.protocol == 'https:' ? 's' : '') + '://captainup.com/assets/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(cpt);
+     })();
+</script>
+<!-- End Captain Up -->
 </body>
 </html>
