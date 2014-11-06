@@ -20,17 +20,35 @@ a:hover[href="itemSelection.html"]{color:black;}
 a:active[href="itemSelection.html"]{color:yellow;}
 /*----- End Search link ------*/
 /*----- Questions link ------*/
-a:link[href="questions.html"]{color:white;}
-a:visited[href="questions.html"]{color:white;}
-a:hover[href="questions.html"]{color:black;}
-a:active[href="questions.html"]{color:yellow;}
+a:link[href="itemregistration.html"]{color:white;}
+a:visited[href="itemregistration.html"]{color:white;}
+a:hover[href="itemregistration.html"]{color:black;}
+a:active[href="itemregistration.html"]{color:yellow;}
 /*----- End Questions link ------*/
 /*----- Idea link ------*/
-a:link[href="ideas.html"]{color:white;}
-a:visited[href="ideas.html"]{color:white;}
-a:hover[href="ideas.html"]{color:black;}
-a:active[href="ideas.html"]{color:yellow;}
+a:link[href="leaderBoards.html"]{color:white;}
+a:visited[href="leaderBoards.html"]{color:white;}
+a:hover[href="leaderBoards.html"]{color:black;}
+a:active[href="leaderBoards.html"]{color:yellow;}
 /*----- End Idea link ------*/
+a:link[href="collection.html"]{color:white;}
+a:visited[href="collection.html"]{color:white;}
+a:hover[href="collection.html"]{color:black;}
+a:active[href="collection.html"]{color:yellow;}
+/*=================== End Navbar ============================*/
+
+#opening{
+	font-size: 80px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#openingPhrase{
+	font-size: 35px;
+	text-align: center;
+}
+#levelbtn{
+	text-align: center;
+}
 
 #shypBackground{
 	width: 100%;
@@ -40,4 +58,11 @@ a:active[href="ideas.html"]{color:yellow;}
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+}
+
+#selection{
+	text-align: center;
+}
+nav nav-tabs{
+	text-align: center;
 }
