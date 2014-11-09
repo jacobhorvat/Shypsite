@@ -20,16 +20,6 @@
   .navbar-inverse .navbar-nav not(.open) .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
     color:#ffffff;
   }
-.nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
-}
-.nav-tabs{
-  text-align: center;
-  font-size:30px;
-}
 
 </style>
 </head>
@@ -51,7 +41,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class=><a href="index.html"><span class = "glyphicon glyphicon-home"> Home</a></span></li>
+        <li class=><a href="videoIndex.html"><span class = "glyphicon glyphicon-home"> Home</a></span></li>
         <li class="active"><a href="itemSelection.html"><span class="glyphicon glyphicon-search"> Search Items</a></span></li>
         <li class=><a href="itemregistration.html"><span class = "glyphicon glyphicon-question-sign"> Item Registration</a></span></li>
         <li class="dropdown">
@@ -73,98 +63,25 @@
   </div><!-- /.container-fluid -->
 </nav>
 <!-- ============================================  End Navbar =================================================== -->
-    <ul class="nav nav-tabs" role="tablist" >
-        <h3><u> Select a Filter </u></h3>
-        <li role="presentation"><a href="itemSelectionAlphabetical.html">Alphabetical Order</a></li>
-        <li role="presentation"><a href="itemSelectionType.html">Item type</a></li>
-        <li role="presentation" class="active"><a href="itemSelectionCompany.html">Company</a></li>
-    </ul>
-    <div class="container">
 
-        <div class="row">
+<div class="container">
+  <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">Search Companies</h1>
+      </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="asusProducts.html">
+                    <img class="img-responsive" src="http://www.omgchrome.com/wp-content/uploads/2013/11/Asus_logo1.jpg" alt="Monitor">
+                </a>
+                <div class="caption">
+                    <h3>Asus</h3>
+                </div>
+            </div>
+      </div>
+</div>
 
-            <div class="col-lg-12">
-                <h1 class="page-header">Search by Company</h1>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="appleProducts.html">
-                    <img class="img-responsive" src="http://cdn10.mixrmedia.com/wp-uploads/ziggytek/blog/2011/09/apple-logo1-400x300.jpg" alt="Apple">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://quantup.pl/wp-content/uploads/2012/08/bmw-logo-400x300.jpeg" alt="BMW">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://www.whartonindia.com/assets/images/startups/bandar-foods.png" alt="bandarFoods">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://lh3.ggpht.com/Cakg8PzvBoDTCg88CDhqAn9vCByDp0bwD6vW5BdjmbvmUaz0foEqJaKFniY-fB9yj0o=w300" alt="classDojo">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://siliconangle.com/files/2013/08/firebase-logo-blog1.png" alt="Firebase">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-            </div>
-        </div>
 
-        <hr>
 
-<div id='cptup-ready'></div> 
-<script data-cfasync='false' type='text/javascript'>
-    window.captain = {up: function(fn) { captain.topics.push(fn) }, topics: []};
-    // Add your settings here:
-    captain.up({
-        api_key: '5455ff3473873a5f820000b6'
-    });
-</script>
-<script data-cfasync='false' type='text/javascript'>
-    (function() {
-        var cpt = document.createElement('script'); cpt.type = 'text/javascript'; cpt.async = true;
-        cpt.src = 'http' + (location.protocol == 'https:' ? 's' : '') + '://captainup.com/assets/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(cpt);
-     })();
-</script>
 </body>
 </html>
