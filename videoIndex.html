@@ -9,28 +9,32 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <style>
-h1{
-  text-align: center;
-  font-size: 30px;
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    color:#000000;
+  }
+.navbar-inverse .navbar-nav not(.open) .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
+    color:#ffffff;
+  }
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
 }
-p{
-  text-align:center;
-  font-size: 20px;
+.nav-tabs{
+  text-align: center;
+  font-size:30px;
 }
 
-#select{
-  text-align: center;
-  font-size: 30px;
-}
-#list{
-  font-size: 20px;
-}
 </style>
-
 </head>
-<body>
-<!-- ==========Begin Navbar=============-->
+
+<!-- ============================================  Begin Navbar =================================================== -->
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,42 +65,13 @@ p{
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<!-- ==========End Navbar=============-->
-
-<!-- =======================================JumboTron============================================-->
-<div class="container">
-  <div class="well">
-    <h1>Welcome to How-to-Tech!</h1>
-      <p>Where you learn the How-to's, search and progress!</p>
-      <p id="levelbtn"><a class="btn btn-primary btn-lg" href="itemSelection.html" role="button">Begin your search <span class = "glyphicon glyphicon-chevron-right"></span></a></p>
-  </div>
-</div>
-<!-- =======================================End JumboTron==========================================-->
-<div class ="container">
-  <div class="row">
-      
-      <div class="col-md-4">
-        <h1>How-to</h1>
-        <p>Ship those tough items, operate the Pack-size and manually process orders. </p>
-      </div>
-      
-        <div class="col-md-4"> 
-          <h1>Search</h1>
-          <p>Our database of multimedia tools to help you learn efficiently.</p>
-
-        </div>
-        
-        <div class="col-md-4">
-          <h1>Progress</h1>
-          <p>Level up and earn badges for your new acquired knowledge!</p>
-        </div>
-    </div>
-  </div>
-</div>
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-
+<!-- ============================================  End Navbar =================================================== -->
+    <ul class="nav nav-tabs" role="tablist">
+        <h3><u> Select a Filter </u></h3>
+        <li role="presentation"><a href="itemSelectionAlphabetical.html">Alphabetical Order</a></li>
+        <li role="presentation"><a href="itemSelectionType.html">Item Category</a></li>
+        <li role="presentation"><a href="itemSelectionCompany.html">Company</a></li>
+    </ul>
+  
 </body>
 </html>
