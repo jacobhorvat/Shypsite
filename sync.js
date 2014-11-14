@@ -1,73 +1,69 @@
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-  
-}
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: -80px;
-  width: 100%;
-  height: 100%;
-}
-  .articles{
-    position: relative;
-    height:450;
-    width:200;
-  }
-  #tutorialTitle{
-    font-size: 40px;
-    text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-  .articles{
-    left: 550px;
-    top:-475px;
-  }
+/* if the document is ready... */
+$(document).ready(function(){
 
+/* if HTML5 video is supported */
+  if($('video').attr('canPlayType')){
+    
+    $('aside::first').append('<p>Play the video above and see how ' +
+                             'the different connected content sections ' +
+                             'in the page appear at the right moment. '+
+                             'Feel free to jump forward and backward</p>');
 
+    var timestamps = [],
+        last = 0,
+        all = 0,
+        now = 0,
+        old = 0,
+        i=0;
 
-.js article{
-  position:absolute;
-  left: -99999px;
-}
-.js article.current{
-  position:relative;
-  left:0;
-  height:50px;
-  width:50px;
-}
+/* hide all articles via CSS */
+    $('html').addClass('js');
 
+/* 
+   Loop over the articles, read the timestamp start and end and store 
+   them in an array
+*/
+    $('article').each(function(o){
+      if($(this).attr('data-start')){
+        timestamps.push({
+          start : +$(this).attr('data-start'),
+          end : +$(this).attr('data-end'),
+          elm : $(this)
+        });
+      }
+    });
+
+    all = timestamps.length;
+
+/* 
+  when the video is playing, round up the time to seconds and call the 
+  showsection function continuously
+*/
+    $('video').bind('timeupdate',function(event){
+      now = parseInt(this.currentTime);
+
+      /* throttle function calls to full seconds */
+      if(now > old){
+        showsection(now);
+      }
+      old = now;
+
+    });
 
 /*
- *  CSS3 Media queries
- */
-
-@media all and (orientation:portrait) { 
-  
-}
-
-@media all and (orientation:landscape) { 
-  
-}
-
-@media screen and (max-device-width: 200px) {
-  
-}
-
-@media print {
-  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
-  a, a:visited { color: #444 !important; text-decoration: underline; }
-  a:after { content: " (" attr(href) ")"; } 
-  abbr:after { content: " (" attr(title) ")"; }
-  .ir a:after { content: ""; }  /* Don't show links for images */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3{ page-break-after: avoid; }
-}
-
+  Test if the current time is within the range of any of the 
+  defined timestamps and show the appropriate section.
+  Hide all others.
+*/
+    function showsection(t){
+      for(i=0;i<all;i++){
+        if(t >= timestamps[i].start && t <= timestamps[i].end){
+          timestamps[i].elm.addClass('current');
+        } else {
+          timestamps[i].elm.removeClass('current');
+        }
+      }
+    };
+    
+  };
+});
