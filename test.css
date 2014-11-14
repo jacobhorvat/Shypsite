@@ -15,3 +15,26 @@ h1 a{
 	text-transform: uppercase;
 	text-decoration: none;
 }
+#page{
+	margin: 36px auto;
+	width: 90%;
+	background-color: blue;
+}
+.blog{
+	margin:0 auto 53px;
+	width: 93.75%; /* 900/960 */
+	background-color: black;
+}
+.blog .main{
+	float: left;
+	width: 566px;
+	background-color:red;
+
+}
+.blog .other{
+	float: right;
+	width: 331px;
+	background-color:green;
+}
+/* middle of page 32*/
+
