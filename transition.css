@@ -1,0 +1,35 @@
+html{
+	background-color:#72CCFA; 
+}
+
+.navbar{
+	padding-bottom: 40px;
+	background-color: #000000;
+}
+#navbar2{
+	top: -30px;
+}
+#jumbotron{
+	background-color: #DEF6E9;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+#slogan{
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+}
+#btn{
+	font-family: 'Alegreya Sans', sans-serif;
+	text-align: center;
+}
+
+#long_image{
+	position: relative;
+	top: -70px;
+}
+iframe{
+	max-width: 100%;
+}
